@@ -4,3 +4,22 @@ __pycache__/
 venv/
 .env
 *.pem
+
+# Telegram credentials
+coins/Telegram/telegram.env
+
+# Python temporary files
+__pycache__/
+*.pyc
+
+# Python virtual environments
+.venv/
+venv/
+
+# Other secrets
+.env
+.env.*
+
+
+
+
