@@ -35,7 +35,7 @@ from urllib.request import Request, urlopen
 COINS = ["XRP", "ETH", "BTC", "SOL", "BNB"]
 QUOTE_ASSET = "USDT"
 CANDLE_INTERVAL = "4h"
-START_DATE = datetime(2024, 1, 1, tzinfo=timezone.utc)
+START_DATE = datetime(2026, 10, 1, tzinfo=timezone.utc)
 PAGE_LIMIT = 1000
 REQUEST_TIMEOUT_SECONDS = 30
 REQUEST_ATTEMPTS = 3

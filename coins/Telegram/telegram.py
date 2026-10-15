@@ -20,8 +20,9 @@ from pathlib import Path
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
+BASE_DIR = Path(__file__).resolve().parent.parent
 DATA_DIR = Path(os.environ.get(
-    "HEURELIA_DATA_DIR", "/home/savage/Heurelia/coins/strategy_results"
+    "HEURELIA_DATA_DIR", str(BASE_DIR / "strategy_results")
 ))
 DB_PATH = Path(os.environ.get(
     "HEURELIA_NOTIFY_DB", "/home/savage/.local/state/heurelia/telegram_notifier.sqlite3"

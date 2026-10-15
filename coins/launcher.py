@@ -9,8 +9,9 @@ from pathlib import Path
 # CONFIGURATION
 # =====================================
 
-MAIN = Path("/home/savage/Heurelia/coins/main.py")
-TELEGRAM = Path("/home/savage/Heurelia/coins/Telegram/telegram.py")
+BASE_DIR = Path(__file__).resolve().parent
+MAIN = BASE_DIR / "main.py"
+TELEGRAM = BASE_DIR / "Telegram" / "telegram.py"
 
 START_DELAY = 30
 CHECK_INTERVAL = 24 * 60 * 60  # 24 hours
